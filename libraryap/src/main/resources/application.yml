@@ -1,1 +1,8 @@
-spring.application.name=libraryap
+spring:
+  application:
+    name: libraryap
+  datasource:
+    url: jdbc:postgresql://localhost:5432/library
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
