@@ -32,11 +32,6 @@ public class Autor {
     @Column(length = 50, nullable = false)
     private String nacionalidade;
 
-    @Column(name = "data_cadastro", nullable = false)
-    private LocalDate dataCadastro;
-
-    @Column(name = "data_atualizacao", nullable = false)
-    private LocalDate dataAtualizacao;
 
     @OneToMany(mappedBy = "autor")
     private List<Livro> livros;

@@ -12,6 +12,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.UUID;
 
@@ -38,7 +39,7 @@ public class Livro {
     private Genero genero;
 
     @Column(nullable = false, precision = 18, scale = 2)
-    private Double preco;
+    private BigDecimal preco;
 
     @ManyToOne()
     @JoinColumn(name = "id_autor")
